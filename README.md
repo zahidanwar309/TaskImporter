@@ -48,6 +48,11 @@ An abstract class with protected methods.
 - getDb() - Database instance
 
 
+TaskListActivity.java
 
+Controller class, which controll all the views.
+
+- void onCreate(Bundle savedInstanceState)
+- void onStart() - Replace middle content with list fragment
 
 

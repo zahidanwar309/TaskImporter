@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/task_list_fragment">
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/top_bar_bd"
+        android:background="@android:color/white"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none" />
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/topbar_layout">
+
+    <View
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_title_bar_height"
+        android:background="@color/top_bar_bd" />
+
+
+
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="@dimen/top_title_bar_image_logo_width"
+        android:layout_height="@dimen/top_title_bar_image_logo_height"
+        android:layout_marginLeft="@dimen/top_title_bar_image_logo_left_margin"
+        android:src="@drawable/cl_logo"
+        android:layout_toRightOf="@+id/image_menu" />
+
+
+    <ImageView
+        android:id="@+id/image_menu"
+        android:layout_width="@dimen/top_title_bar_menu_width"
+        android:layout_height="@dimen/top_title_bar_menu_width"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/top_title_bar_menu_margin"
+        android:src="@drawable/menu"
+        android:visibility="gone"/>
+</RelativeLayout>

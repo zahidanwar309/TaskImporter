@@ -5,7 +5,7 @@ The app should avoid to add duplicate data on the table.
 
 Model::
 
-tblsTask
+tblTask
 
 
 task_id INTEGER PRIMARY KEY,
@@ -28,6 +28,26 @@ option_id INTEGER PRIMARY KEY,
 type TEXT,
 label TEXT,
 question_id INTEGER
+
+
+Controllers::
+
+SplashActivity.java
+
+An activity, which shows splash screen on app load.
+
+- void onCreate(Bundle savedInstanceState) - create the splash screen.
+
+
+TaskImporterActivity.java
+
+An abstract class with protected methods.
+
+- void onCreate(Bundle savedInstanceState)
+- replaceFragment(Fragment contentFragment) - To replace fragment with another fragment
+- getDb() - Database instance
+
+
 
 
 

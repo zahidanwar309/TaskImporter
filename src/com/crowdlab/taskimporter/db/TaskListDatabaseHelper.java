@@ -116,7 +116,7 @@ public class TaskListDatabaseHelper {
      * Insert Task data on the table
      * protected keyword used for junit test
      */
-    protected boolean insertTask(int taskId, String title, int hidden) {
+    public boolean insertTask(int taskId, String title, int hidden) {
         ContentValues values = new ContentValues();
         values.put("task_id", taskId);
         values.put("title", title);
@@ -129,7 +129,7 @@ public class TaskListDatabaseHelper {
      * protected keyword used for junit test
      */
 
-    protected boolean insertQuestion(int questionId, String title, String summary, int taskId) {
+    public boolean insertQuestion(int questionId, String title, String summary, int taskId) {
 
         ContentValues values = new ContentValues();
 
@@ -145,7 +145,7 @@ public class TaskListDatabaseHelper {
      * Insert option data on the table
      * protected keyword used for junit test
      */
-    protected boolean insertOption(int optionId, String type, String label, int questionId) {
+    public boolean insertOption(int optionId, String type, String label, int questionId) {
 
         ContentValues values = new ContentValues();
 
